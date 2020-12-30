@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/cV_Corner"
+        app:cardElevation="@dimen/cV_Elevation"
+        app:contentPadding="@dimen/cV_Padding"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/sNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/addFrameLayoutBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtSeriesName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seriesName" />
+
+                    <EditText
+                        android:id="@+id/seriesName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_seriesNameHeigth"
+                        android:background="@drawable/layout_stroke"
+                        android:ems="10"
+                        android:fontFamily="@font/abeezee"
+                        android:inputType="text"
+                        android:paddingEnd="@dimen/add_seriesNameEndPadding"
+                        android:paddingStart="@dimen/add_seriesNameStartPadding"
+                        android:textSize="@dimen/add_seriesNameTextSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/sGenreLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/addFrameLayoutBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtsGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seriesGenre" />
+
+                    <Spinner
+                        android:id="@+id/spinnerGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/sLastEpisode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/addFrameLayoutBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtsLastEpisode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seriesLastEpisode"
+                        android:paddingBottom="@dimen/add_lastEpisodeTxtBottomPadding"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/add_seasonLayoutPadding"
+                            android:paddingEnd="@dimen/add_seasonLayoutPadding">
+
+                            <TextView
+                                android:id="@+id/txtsSeason"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="@string/season" />
+
+                            <EditText
+                                android:id="@+id/seriesSeason"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/add_seriesHeigth"
+                                android:layout_gravity="center"
+                                android:background="@drawable/layout_stroke"
+                                android:ems="10"
+                                android:fontFamily="@font/abeezee"
+                                android:hint="@string/hintNumber"
+                                android:inputType="number"
+                                android:paddingStart="@dimen/add_seriesSeasonPadding"
+                                android:paddingEnd="@dimen/add_seriesSeasonPadding"
+                                android:textSize="@dimen/add_SeasonEpisodeTextSize" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/add_episodeLayoutPadding"
+                            android:paddingEnd="@dimen/add_episodeLayoutPadding">
+
+                            <TextView
+                                android:id="@+id/txtsEpisode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="@string/episode" />
+
+                            <EditText
+                                android:id="@+id/seriesEpisode"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/add_seriesHeigth"
+                                android:layout_gravity="center"
+                                android:background="@drawable/layout_stroke"
+                                android:ems="10"
+                                android:fontFamily="@font/abeezee"
+                                android:hint="@string/hintNumber"
+                                android:inputType="number"
+                                android:paddingStart="@dimen/add_seriesEpisodePadding"
+                                android:paddingEnd="@dimen/add_seriesEpisodePadding"
+                                android:textSize="@dimen/add_SeasonEpisodeTextSize" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/cbFinished"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/addFrameLayoutBottom">
+
+                <CheckBox
+                    android:id="@+id/isFinished"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/add_CheckBoxMargin"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="@string/isFinished" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/seriesAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/add" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>

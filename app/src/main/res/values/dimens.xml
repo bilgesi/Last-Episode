@@ -1,0 +1,40 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="cV_Corner">5dp</dimen>
+    <dimen name="cV_Elevation">15dp</dimen>
+    <dimen name="cV_Padding">10dp</dimen>
+
+
+    <!-- FRAGMENT DETAIL XML -->
+    <dimen name="detailsButtonMargin">10dp</dimen>
+    <dimen name="detailsEpisodeTextBottomPadding">50dp</dimen>
+    <dimen name="detailsEpisodeTextSize">16sp</dimen>
+    <dimen name="detailsSeriesNameTextSize">20sp</dimen>
+
+
+    <!-- FRAGMENT ADD XML -->
+    <dimen name="addFrameLayoutBottom">25dp</dimen>
+    <dimen name="add_seriesNameTextSize">16sp</dimen>
+    <dimen name="add_seriesNameStartPadding">10dp</dimen>
+    <dimen name="add_seriesNameEndPadding">10dp</dimen>
+    <dimen name="add_seriesNameHeigth">50dp</dimen>
+
+    <dimen name="add_lastEpisodeTxtBottomPadding">10dp</dimen>
+    <dimen name="add_seasonLayoutPadding">10dp</dimen>
+    <dimen name="add_episodeLayoutPadding">10dp</dimen>
+    <dimen name="add_seriesSeasonPadding">10dp</dimen>
+    <dimen name="add_seriesEpisodePadding">10dp</dimen>
+    <dimen name="add_SeasonEpisodeTextSize">16sp</dimen>
+    <dimen name="add_seriesHeigth">50dp</dimen>
+
+    <dimen name="add_CheckBoxMargin">10dp</dimen>
+
+
+    <!-- LIST TV SERIES XML -->
+    <dimen name="list_titleTextSize">10sp</dimen>
+    <dimen name="list_finishedImageWidthSize">100dp</dimen>
+    <dimen name="list_finishedImageHeightSize">120dp</dimen>
+    <dimen name="list_itemMargins">2dp</dimen>
+    <dimen name="list_itemPaddings">10dp</dimen>
+</resources>
